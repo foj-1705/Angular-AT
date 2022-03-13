@@ -11,7 +11,7 @@ This is the code for the paper under review.
 **Pre-trained Model**: https://drive.google.com/file/d/1yF8Mvta0qzbEqCDxbybM_B20QH0ByfEq/view?usp=sharing
 
 WideResNet-34-10: 
-|Method      | PGD-20 (%)    | PGD-500 (%)   | Auto-Attack     | Natural    |
+|Method      | PGD-20 (%)    | PGD-500 (%)   | Auto-Attack (%)    | Natural (%)    |
 |------------|---------------|---------------|-----------------|------------|
 |Proposed    | 63.10         |  62.30        | 53.19           | 85.33      |
 
