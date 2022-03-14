@@ -1,8 +1,8 @@
 import torch
 import torch.nn.functional as F
-import mxnet as mx
+#import mxnet as mx
 
-
+#https://github.com/wznpub/MMA_Regularization/blob/main/MMA.py
 def get_mma_loss(weight):
     
 
