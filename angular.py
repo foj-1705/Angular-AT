@@ -6,10 +6,6 @@ import torch.nn.functional as F
 def minmax_ang(logit, logit_adv, label):
     
 
-         
-    
-    cos_n = F.softmax(logit, dim =1)
-    cos_a = F.softmax(logit_adv, dim =1)
     
     cos_n = torch.gather(logit, 1, torch.unsqueeze(label, 1))
     
