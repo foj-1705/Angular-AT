@@ -7,7 +7,7 @@ from he import HELoss
 from angular import *
 #from ang_disim import*
 from MMA import* 
-from separate import*
+#from separate import*
 
 
 def pgd_loss(model, x_natural, y, optimizer, step_size=0.003, epsilon=0.031,
