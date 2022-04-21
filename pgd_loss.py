@@ -74,7 +74,7 @@ def pgd_loss(model, x_natural, y, optimizer, step_size=0.003, epsilon=0.031,
 
 
         #logit_adv = model(x_adv)            #alternative
-        rel_ang, label_ang, cos_lib, diag = minmax_ang(logit_nat, logit_adv, y)
+        rel_ang, label_ang = minmax_ang(logit_nat, logit_adv, y)
 
         loss = criterion_loss(logit_adv, y, 0) - 4.*rel_ang + 1.0*label_ang + 0.03*mma_loss
 
