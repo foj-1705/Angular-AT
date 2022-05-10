@@ -11,9 +11,9 @@ def minmax_ang(logit, logit_adv, label):
     
     cos_a = torch.gather(logit_adv, 1, torch.unsqueeze(label, 1))
 
-    cos_a = torch.max(cos_a, dim=1)[0]
+    #cos_a = torch.max(cos_a, dim=1)[0]
 
-    cos_n = torch.max(cos_n, dim=1)[0]
+    #cos_n = torch.max(cos_n, dim=1)[0]
     
     
 
