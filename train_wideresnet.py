@@ -23,7 +23,7 @@ parser.add_argument('--batch-size', type=int, default=128, metavar='N',
                     help='input batch size for training (default: 128)')
 parser.add_argument('--test-batch-size', type=int, default=128, metavar='N',
                     help='input batch size for testing (default: 128)')
-parser.add_argument('--epochs', type=int, default=98, metavar='N',
+parser.add_argument('--epochs', type=int, default=90, metavar='N',
                     help='number of epochs to train')
 parser.add_argument('--weight-decay', '--wd', default=5e-4,
                     type=float, metavar='W')
