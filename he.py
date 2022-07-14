@@ -7,7 +7,7 @@ class HELoss(nn.Module):
         super(HELoss, self).__init__()
         self.s = s
 
-    def forward(self, logits, labels, cm=0):
+    def forward(self, logits, labels, cm=1):
         numerator = self.s * (torch.diagonal(logits.transpose(0, 1)[labels]) - cm)
         item = torch.cat([torch.cat((logits[i, :y], logits[i, y+1:])).unsqueeze(0) for i, y in enumerate(labels)], dim=0)
         denominator = torch.exp(numerator) + torch.sum(torch.exp(self.s * item), dim=1)
