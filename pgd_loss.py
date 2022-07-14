@@ -76,9 +76,9 @@ def pgd_loss(model, x_natural, y, optimizer, step_size=0.003, epsilon=0.031,
         #logit_adv = model(x_adv)            #alternative
         rel_ang, label_ang = minmax_ang(logit_nat, logit_adv, y)
 
-        loss = criterion_loss(logit_adv, y, 0) - 4.*rel_ang + 1.0*label_ang + 0.03*mma_loss
+        loss = criterion_loss(logit_adv, y, 0) - 3.*rel_ang + 0.4*label_ang + 0.5*mma_loss
 
-        #loss = loss_nat + 1.*(loss_adv - loss_nat)-3.0*rel_ang + 0.55*label_ang + 0.03*mma_loss 
+       
     else:
         raise RuntimeError('A error occurred')
     return loss
